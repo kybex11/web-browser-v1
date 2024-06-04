@@ -11,14 +11,25 @@
             margin: 0;
             padding: 0;
             overflow: hidden;
+            background-color: #242424;
+        }
+        
+        .webquery {
+            background-color: white;
+            display: flex;
         }
         
         .webquery input {
-            width: 100%;
+            width: 80%;
             height: 20px;
             font-size: large;
             color: black;
             border: none;
+        }
+        
+        .viewport {
+            width: 100%;
+            height: calc(100vh - 20px);
         }
     </style>
 </head>
@@ -28,6 +39,7 @@
         <div class="webquery">
             <input type="text" id="web" placeholder="Query here">
         </div>
+        <div class="viewport"></div>
     </div>
     <script src="./src/main.js" type="module"></script>
 </body>
