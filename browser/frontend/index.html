@@ -27,6 +27,13 @@
             border: none;
         }
         
+        .webquery button {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: large;
+        }
+        
         .viewport {
             width: 100%;
             height: calc(100vh - 20px);
@@ -38,10 +45,13 @@
     <div id="app">
         <div class="webquery">
             <input type="text" id="web" placeholder="Query here">
+            <button onclick="search()">S</button>
         </div>
-        <div class="viewport"></div>
+        <div class="viewport">
+            <iframe src="" frameborder="0" id="viewport-frame"></iframe>
+        </div>
     </div>
-    <script src="./src/main.js" type="module"></script>
+    <script src="./src/main.js"></script>
 </body>
 
 </html>
